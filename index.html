@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="Matthew Andres">
+    <meta name=”description” content="Coding Student's Website">
+    <meta property="og:image" content="The URL Image">
+    <meta property="og:description" content="Description of Image">
+    <meta property="og:title" content="Coding Student's Webpage">
+    <link rel="icon" href="./Pictures/MLA.png" type="image">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay for Pizza!</title>
+</head>
+
+<body>
+    <h1><img src="official-joe-s-pizza.jpg" width="80" height="75" alt="Joe's Pizza's logo"><font size="+10">   Joe's Pizza Payment Form</font></h1>
+    <hr>
+
+<!--User info-->
+<fieldset>
+    <legend>User Information</legend>
+    <ul>
+        <li><label for="name">Name<abbr title="Required">*</abbr>:</label><input type="text" id="name" name="user.name"
+                required></li>
+        <li><label for="pass">Password<abbr title="Required">*</abbr>:</label>
+            <input type="password" id="pass" name="password" required>
+        </li>
+    </ul>
+    </legend>
+</fieldset>
+
+<!--Drink-->
+    <form>
+        <fieldset>
+            <legend>What drink do you want?</legend>
+            <p>
+                <ul>
+                    <li><input type="radio" id="drink" name="drink" value="Sprite">
+                    <label for="drink">Sprite</label></li><br>
+
+                    <li><input type="radio" id="drink" name="drink" value="Dr. Pepper">
+                    <label for="drink">Dr. Pepper</label></li><br>
+
+                    <li><input type="radio" id="drink" name="drink" value="Chocolate Milkshake">
+                    <label for="drink">Chocolate Milkshake</label></li><br>
+
+        
+                    <li><input type="radio" id="drink" name="drink" value="Vanilla Milkshake">
+                    <label for="drink">Vanilla Milkshake</label></li>
+                    </ul><br> 
+        </fieldset>     
+        <br>
+
+<!--Pizza Preferences-->
+<fieldset>
+    <legend>Pizza Preferences</legend>
+<ul>
+    <li>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Pepperoni">
+        <label for="vehicle1">Pepperoni</label></li><br>
+        <li><input type="checkbox" id="vehicle2" name="vehicle2" value="Pineapple">
+        <label for="vehicle2">Pineapple</label></li><br>
+        <li><input type="checkbox" id="vehicle3" name="vehicle3" value="Sausage">
+        <label for="vehicle3">Sausage</label></li><br>
+        <li><input type="checkbox" id="vehicle3" name="vehicle3" value="Cheese Only">
+        <label for="vehicle3">Cheese Only</label></li>
+</ul>
+</fieldset>
+
+<!--Special Instructions-->
+<fieldset>
+    <legend>Special Instructions</legend>
+    <p><label for="request">Special Requests:</label></p>
+    <textarea id="request" name="specialrequest" rows="4"
+    cols="50">Input your special request here.</textarea>
+    <br>
+    <input type="submit" value="Submit">
+</fieldset>
+</form>
+</body>
+</html>
